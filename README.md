@@ -1,5 +1,1 @@
-TODO
-=====
-
-
-Invullen :-)
+This folder contains two different functions for performing real-time groundwater level forecast with Pastas: a function to perform real-time forecast with a single Pastas model and a function to perform forecasts with a Pastas project that contains multiple models. Besides, example scripts are added in which the functions are used. The examples can be run easily: just copy the pastas-realtime folder to a specific location and change the working directory within the example scripts. The scripts can be run directly from the folder. Data and tools for running the examples are also included.
