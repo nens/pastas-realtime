@@ -24,7 +24,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
-class Rt_simulation:
+class rt_simulation:
     """
     Wrapper around Pastas model for updating and forecasting which can be 
     used for real-time simulations
@@ -190,5 +190,5 @@ class Rt_simulation:
             forecast_ml.transform = self.model.copy().transform
                 
         # Perform a simulation with the forecast model and return the forecasted values of the oseries
-        forecast = forecast_ml.simulate(parameters = self.pars)
+        forecast = forecast_ml.simulate(parameters = self.p)
         return(forecast[len(forc)-len(forcing):])
