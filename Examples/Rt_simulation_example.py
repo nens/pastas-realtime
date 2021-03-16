@@ -35,8 +35,8 @@ dr = str(r'C:\Users\Karl.schutt\Desktop\pastas-realtime')
 # Import tools and real time simulation class
 sys.path.append(dr+'/Tools')
 from Eref_to_epot import calc_epot # Function for calculating potential evaporation from reference evaporation
-sys.path.append(dr+'/real time functionalities')
-from rt_simulation import Rt_simulation # Function for performing real-time forecasts
+sys.path.append(dr+'/Wrappers')
+from rt_simulation import rt_simulation # Function for performing real-time forecasts
 
 
 """
@@ -109,7 +109,7 @@ Real time simulation
 
 """
 # Create real-time simulation object
-rtc = Rt_simulation(ml,"test")
+rtc = rt_simulation(ml,"test")
 
 # Forecasts of the groundwater level for a year ahead based on observed precipitation excess: 
 f=recharge2.to_frame() # Create dataframe with forcing data
